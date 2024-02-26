@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trắc nghiệm</title>
+    <style>
+        body {
+            font-family: "Montserrat", sans-serif;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #88a4b1;
+            color: white;
+            padding: 14px 20px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #9bbdcc;
+        }
+    </style>
+    <link rel="stylesheet" href="/assets/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <form id="quizForm">
+        <div class="center-content">
+            <div class="intro">
+                <h1> ĐIỀN THÔNG TIN CÁ NHÂN </h1>
+                <div class="center-content">
+                    <div class="box">
+                        <label for="fullName">Họ và tên:</label>
+                        <input type="text" id="fullName" name="fullName" required><br>
+
+                        <label for="birthdate">Ngày tháng năm sinh:</label>
+                        <input type="date" id="birthdate" name="birthdate" required><br>
+
+                        <label for="studentID">Mã sinh viên:</label>
+                        <input type="text" id="studentID" name="studentID" required><br>
+
+                        <label for="class">Lớp:</label>
+                        <input type="text" id="class" name="class" required><br>
+
+                    </div>
+                </div>
+
+                <div class="center-content"><input type="submit" value="Lưu thông tin"></div>
+            </div>
+        </div>
+    </form>
+
+    <br><br><br><br><br><br>
+    <hr>
+    <form id="Test">
+        <div class="center-content">
+            <div class="box">
+                <div class="center-content">
+                    <h2 class="btn-ch">Câu hỏi</h2>
+                </div>
+
+                <div class="center-content">
+                    <h3 class="btn-ch1">Câu hỏi loại 1</h3>
+                </div>
+                <p id="question1">1. Kết quả câu trả lời là gì</p>
+                <input type="radio" name="question1" value="true"> Đúng
+                <input type="radio" name="question1" value="false"> Sai<br>
+        
+                <p id="question2">2. Kết quả câu trả lời là gì</p>
+                <input type="radio" name="question2" value="true"> Đúng
+                <input type="radio" name="question2" value="false"> Sai<br>
+        
+                <p id="question3">3. Kết quả câu trả lời là gì</p>
+                <input type="radio" name="question3" value="true"> Đúng
+                <input type="radio" name="question3" value="false"> Sai<br>
+        
+                <p id="question4">4. Kết quả câu trả lời là gì</p>
+                <input type="radio" name="question4" value="true"> Đúng
+                <input type="radio" name="question4" value="false"> Sai<br>
+        
+                <p id="question5">5. Kết quả câu trả lời là gì</p>
+                <input type="radio" name="question5" value="true"> Đúng
+                <input type="radio" name="question5" value="false"> Sai<br>
+        
+                <p id="question6">6. Kết quả câu trả lời là gì</p>
+                <input type="radio" name="question6" value="true"> Đúng
+                <input type="radio" name="question6" value="false"> Sai<br>
+        
+                <p id="question7">7. Kết quả câu trả lời là gì</p>
+                <input type="radio" name="question7" value="true"> Đúng
+                <input type="radio" name="question7" value="false"> Sai<br>
+        
+                <p id="question8">8. Kết quả câu trả lời là gì</p>
+                <input type="radio" name="question8" value="true"> Đúng
+                <input type="radio" name="question8" value="false"> Sai<br>
+        
+                <p id="question9">9. Kết quả câu trả lời là gì</p>
+                <input type="radio" name="question9" value="true"> Đúng
+                <input type="radio" name="question9" value="false"> Sai<br>
+        
+                <p id="question10">10. Kết quả câu trả lời là gì</p>
+                <input type="radio" name="question10" value="true"> Đúng
+                <input type="radio" name="question10" value="false"> Sai<br>
+        
+        
+                <div class="center-content">
+                    <h3 class="btn-ch1">Câu hỏi loại 2</h3>
+                </div>
+                <!-- Loại 2: Chọn 1 trong 4 đáp án -->
+                <p id="question11">11. Kết quả câu trả lời là gì?</p>
+                <input type="radio" name="question11" value="Answer_1"> Kết quả 1
+                <input type="radio" name="question11" value="Answer_2"> Kết quả 2
+                <input type="radio" name="question11" value="Answer_3"> Kết quả 3
+                <input type="radio" name="question11" value="Answer_4"> Kết quả 4<br>
+        
+                <p id="question12">12. Kết quả câu trả lời là gì?</p>
+                <input type="radio" name="question12" value="Answer_1"> Kết quả 1
+                <input type="radio" name="question12" value="Answer_2"> Kết quả 2
+                <input type="radio" name="question12" value="Answer_3"> Kết quả 3
+                <input type="radio" name="question12" value="Answer_4"> Kết quả 4<br>
+        
+                <p id="question13">13. Kết quả câu trả lời là gì?</p>
+                <input type="radio" name="question13" value="Answer_1"> Kết quả 1
+                <input type="radio" name="question13" value="Answer_2"> Kết quả 2
+                <input type="radio" name="question13" value="Answer_3"> Kết quả 3
+                <input type="radio" name="question13" value="Answer_4"> Kết quả 4<br>
+                <p id="question14">14. Kết quả câu trả lời là gì?</p>
+                <input type="radio" name="question14" value="Answer_1"> Kết quả 1
+                <input type="radio" name="question14" value="Answer_2"> Kết quả 2
+                <input type="radio" name="question14" value="Answer_3"> Kết quả 3
+                <input type="radio" name="question14" value="Answer_4"> Kết quả 4<br>
+                <p id="question15">15. Kết quả câu trả lời là gì?</p>
+                <input type="radio" name="question15" value="Answer_1"> Kết quả 1
+                <input type="radio" name="question15" value="Answer_2"> Kết quả 2
+                <input type="radio" name="question15" value="Answer_3"> Kết quả 3
+                <input type="radio" name="question15" value="Answer_4"> Kết quả 4<br>
+                <p id="question16">16. Kết quả câu trả lời là gì?</p>
+                <input type="radio" name="question16" value="Answer_1"> Kết quả 1
+                <input type="radio" name="question16" value="Answer_2"> Kết quả 2
+                <input type="radio" name="question16" value="Answer_3"> Kết quả 3
+                <input type="radio" name="question16" value="Answer_4"> Kết quả 4<br>
+                <p id="question17">17. Kết quả câu trả lời là gì?</p>
+                <input type="radio" name="question17" value="Answer_1"> Kết quả 1
+                <input type="radio" name="question17" value="Answer_2"> Kết quả 2
+                <input type="radio" name="question17" value="Answer_3"> Kết quả 3
+                <input type="radio" name="question17" value="Answer_4"> Kết quả 4<br>
+                <p id="question18">18. Kết quả câu trả lời là gì?</p>
+                <input type="radio" name="question18" value="Answer_1"> Kết quả 1
+                <input type="radio" name="question18" value="Answer_2"> Kết quả 2
+                <input type="radio" name="question18" value="Answer_3"> Kết quả 3
+                <input type="radio" name="question18" value="Answer_4"> Kết quả 4<br>
+                <p id="question19">19. Kết quả câu trả lời là gì?</p>
+                <input type="radio" name="question19" value="Answer_1"> Kết quả 1
+                <input type="radio" name="question19" value="Answer_2"> Kết quả 2
+                <input type="radio" name="question19" value="Answer_3"> Kết quả 3
+                <input type="radio" name="question19" value="Answer_4"> Kết quả 4<br>
+                <p id="question20">20. Kết quả câu trả lời là gì?</p>
+                <input type="radio" name="question20" value="Answer_1"> Kết quả 1
+                <input type="radio" name="question20" value="Answer_2"> Kết quả 2
+                <input type="radio" name="question20" value="Answer_3"> Kết quả 3
+                <input type="radio" name="question20" value="Answer_4"> Kết quả 4<br>
+                
+                
+                <div class="center-content">
+                    <h3 class="btn-ch1">Câu hỏi loại 3</h3>
+                </div>
+                <p id="question21">21. Kết quả câu trả lời là gì?</p>
+                <input type="checkbox" name="question21" value="Answer_1"> Kết quả 1
+                <input type="checkbox" name="question21" value="Answer_2"> Kết quả 2
+                <input type="checkbox" name="question21" value="Answer_3"> Kết quả 3
+                <input type="checkbox" name="question21" value="Answer_4"> Kết quả 4<br>
+                <p id="question22">22. Kết quả câu trả lời là gì?</p>
+                <input type="checkbox" name="question22" value="Answer_1"> Kết quả 1
+                <input type="checkbox" name="question22" value="Answer_2"> Kết quả 2
+                <input type="checkbox" name="question22" value="Answer_3"> Kết quả 3
+                <input type="checkbox" name="question22" value="Answer_4"> Kết quả 4<br>
+                <p id="question23">23. Kết quả câu trả lời là gì?</p>
+                <input type="checkbox" name="question23" value="Answer_1"> Kết quả 1
+                <input type="checkbox" name="question23" value="Answer_2"> Kết quả 2
+                <input type="checkbox" name="question23" value="Answer_3"> Kết quả 3
+                <input type="checkbox" name="question23" value="Answer_4"> Kết quả 4<br>
+                <p id="question24">24. Kết quả câu trả lời là gì?</p>
+                <input type="checkbox" name="question24" value="Answer_1"> Kết quả 1
+                <input type="checkbox" name="question24" value="Answer_2"> Kết quả 2
+                <input type="checkbox" name="question24" value="Answer_3"> Kết quả 3
+                <input type="checkbox" name="question24" value="Answer_4"> Kết quả 4<br>
+                <p id="question25">25. Kết quả câu trả lời là gì?</p>
+                <input type="checkbox" name="question25" value="Answer_1"> Kết quả 1
+                <input type="checkbox" name="question25" value="Answer_2"> Kết quả 2
+                <input type="checkbox" name="question25" value="Answer_3"> Kết quả 3
+                <input type="checkbox" name="question25" value="Answer_4"> Kết quả 4<br>
+                <p id="question26">26. Kết quả câu trả lời là gì?</p>
+                <input type="checkbox" name="question26" value="Answer_1"> Kết quả 1
+                <input type="checkbox" name="question26" value="Answer_2"> Kết quả 2
+                <input type="checkbox" name="question26" value="Answer_3"> Kết quả 3
+                <input type="checkbox" name="question26" value="Answer_4"> Kết quả 4<br>
+                <p id="question27">27. Kết quả câu trả lời là gì?</p>
+                <input type="checkbox" name="question27" value="Answer_1"> Kết quả 1
+                <input type="checkbox" name="question27" value="Answer_2"> Kết quả 2
+                <input type="checkbox" name="question27" value="Answer_3"> Kết quả 3
+                <input type="checkbox" name="question27" value="Answer_4"> Kết quả 4<br>
+                <p id="question28">28. Kết quả câu trả lời là gì?</p>
+                <input type="checkbox" name="question28" value="Answer_1"> Kết quả 1
+                <input type="checkbox" name="question28" value="Answer_2"> Kết quả 2
+                <input type="checkbox" name="question28" value="Answer_3"> Kết quả 3
+                <input type="checkbox" name="question28" value="Answer_4"> Kết quả 4<br>
+                <p id="question29">29. Kết quả câu trả lời là gì?</p>
+                <input type="checkbox" name="question29" value="Answer_1"> Kết quả 1
+                <input type="checkbox" name="question29" value="Answer_2"> Kết quả 2
+                <input type="checkbox" name="question29" value="Answer_3"> Kết quả 3
+                <input type="checkbox" name="question29" value="Answer_4"> Kết quả 4<br>
+                <p id="question30">30. Kết quả câu trả lời là gì?</p>
+                <input type="checkbox" name="question30" value="Answer_1"> Kết quả 1
+                <input type="checkbox" name="question30" value="Answer_2"> Kết quả 2
+                <input type="checkbox" name="question30" value="Answer_3"> Kết quả 3
+                <input type="checkbox" name="question30" value="Answer_4"> Kết quả 4<br>
+        
+                <div class="center-content">
+                    <h3 class="btn-ch1">Câu hỏi loại 4</h3>
+                </div>
+                <p id="question31">31. Câu trả lời của bạn là gì?</p>
+                <textarea id="answer31" name="answer31" rows="4" cols="100" required></textarea><br>
+                <p id="question32">32. Câu trả lời của bạn là gì?</p>
+                <textarea id="answer32" name="answer32" rows="4" cols="100" required></textarea><br>
+        
+                <p id="question33">33. Câu trả lời của bạn là gì?</p>
+                <textarea id="answer33" name="answer33" rows="4" cols="100" required></textarea><br>
+        
+                <p id="question34">34. Câu trả lời của bạn là gì?</p>
+                <textarea id="answer34" name="answer34" rows="4" cols="100" required></textarea><br>
+        
+                <p id="question35">35. Câu trả lời của bạn là gì?</p>
+                <textarea id="answer35" name="answer35" rows="4" cols="100" required></textarea><br>
+        
+                <p id="question36">36. Câu trả lời của bạn là gì?</p>
+                <textarea id="answer36" name="answer36" rows="4" cols="100" required></textarea><br>
+        
+                <p id="question37">37. Câu trả lời của bạn là gì?</p>
+                <textarea id="answer37" name="answer37" rows="4" cols="100" required></textarea><br>
+        
+                <p id="question38">38. Câu trả lời của bạn là gì?</p>
+                <textarea id="answer38" name="answer38" rows="4" cols="100" required></textarea><br>
+        
+                <p id="question39">39. Câu trả lời của bạn là gì?</p>
+                <textarea id="answer39" name="answer39" rows="4" cols="100" required></textarea><br>
+        
+                <p id="question40">40. Câu trả lời của bạn là gì?</p>
+                <textarea id="answer40" name="answer40" rows="4" cols="100" required></textarea><br>
+        
+                <div class="center-content"><input type="submit" value="Nộp bài"></div>
+            </div>
+        </div>
+    </form>
+
+    <script>
+        var fullName, birthdate, studentID, classInfo;
+        document.getElementById("quizForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+            fullName = document.getElementById("fullName").value;
+            birthdate = document.getElementById("birthdate").value;
+            studentID = document.getElementById("studentID").value;
+            classInfo = document.getElementById("class").value;
+        });
+
+        document.getElementById("Test").addEventListener("submit", function (event) {
+            event.preventDefault();
+            var answers = [];
+            for (var i = 1; i <= 20; i++) {
+                var questionType = document.querySelector('input[name="question' + i + '"]:checked');
+                if (questionType) {
+                    answers.push(questionType.value); 
+                } else {
+                    answers.push(null); 
+                }
+            }
+            for (var i = 21; i <= 30; i++) {
+                var questionType = document.querySelectorAll('input[name="question' + i + '"]:checked');
+                if (questionType.length > 0) {
+                    var answerValues = [];
+                    questionType.forEach(function (element) {
+                        answerValues.push(element.value);
+                    });
+                    answers.push(answerValues);
+                } 
+                else {
+                    answers.push(null);
+                }
+            }
+
+            var correctAnswers = [
+                "true",
+                "false",
+                "true",
+                "false",
+                "true",
+                "false",
+                "true",
+                "false",
+                "true",
+                "false",
+                "Answer_1",
+                "Answer_2",
+                "Answer_3",
+                "Answer_4",
+                "Answer_1",
+                "Answer_2",
+                "Answer_3",
+                "Answer_4",
+                "Answer_1",
+                "Answer_2",
+                ["Answer_1",
+                    "Answer_2"],
+                ["Answer_3",
+                    "Answer_4"],
+                ["Answer_1",
+                    "Answer_2"],
+                ["Answer_3",
+                    "Answer_4"],
+                ["Answer_1",
+                    "Answer_2"],
+                ["Answer_3",
+                    "Answer_4"],
+                ["Answer_1",
+                    "Answer_2"],
+                ["Answer_3",
+                    "Answer_4"],
+                ["Answer_1",
+                    "Answer_2"],
+                ["Answer_3",
+                    "Answer_4"]
+            ];
+
+            var score = 0;
+
+            for (var j = 0; j < answers.length; j++) {
+                var questionElement = document.getElementById('question' + (j + 1));
+
+                if (Array.isArray(correctAnswers[j])) {
+                    if (arraysEqual(answers[j], correctAnswers[j])) {
+                        score += 1;
+                        questionElement.style.color = "green";
+                    } else {
+                        questionElement.style.color = "red";
+                    }
+                } else {
+                    if (answers[j] === correctAnswers[j]) {
+                        score += 1;
+                        questionElement.style.color = "green";
+                    } else {
+                        questionElement.style.color = "red";
+                    }
+                }
+            }
+            alert("Điểm của " + fullName + "(Ngày sinh: " + birthdate + ", Mã sinh viên: " + studentID + ", Lớp: " + classInfo + ") là: " + score);
+        });
+
+        function arraysEqual(arr1, arr2) {
+            if (arr1.length !== arr2.length) return false;
+            for (var i = 0; i < arr1.length; i++) {
+                if (arr1[i] !== arr2[i]) return false;
+            }
+            return true;
+        }
+    </script>
+
+</body>
+
+</html>

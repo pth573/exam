@@ -1,0 +1,49 @@
+#quizForm .intro{
+    border: 1px solid black;
+    padding: 50px 100px;
+    align-content: center;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    background-color: #dbebf3;
+}
+
+.intro h1 {
+    font-size: 1.3rem;
+}
+
+.intro label, .intro input {
+    margin: 5px;
+}
+
+.center-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.intro .center-content>input {
+    margin-top: 30px;
+}
+
+#quizForm {
+    margin-top: 50px;
+}
+
+.btn-ch {
+    padding: 20px 250px;
+    background-color: #88a4b1;
+    color: white;
+    border-radius: 20px;
+}
+
+.btn-ch1 {
+    padding: 15px 30px;
+    background-color: #88a4b1;
+    color: white;
+    border-radius: 30px;
+}
+
+#Test p {
+    background-color: #d2e7f1;
+    padding: 10px 50px;
+    border-radius: 10px;
+}
